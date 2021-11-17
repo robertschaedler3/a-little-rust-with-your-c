@@ -3,7 +3,7 @@ use std::ffi::CStr;
 
 #[no_mangle]
 pub extern "C" fn say_hello(name: *const c_char) {
-    let name = {
+    let name_str = {
         if name.is_null() {
             "World".to_string()
         } else {
@@ -11,5 +11,5 @@ pub extern "C" fn say_hello(name: *const c_char) {
         }
     };
 
-    println!("Hello, {}!", name);
+    println!("Hello, {}!", name_str);
 }
