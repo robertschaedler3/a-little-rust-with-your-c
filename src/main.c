@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+// Include the generated header file
 #include "hello.h"
 
 int main(int argc, char const* argv[])
