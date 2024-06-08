@@ -8,3 +8,6 @@ crate-type = ["staticlib"]
 
 [dependencies]
 libc = { version = "0.2"}
+
+[build-dependencies]
+cbindgen = "0.26.0"
